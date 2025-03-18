@@ -5,4 +5,4 @@ class PointerNotInRangeError(Exception):
         self.position = position
 
     def __str__(self):
-        return str(f"{self.message} | Caught at position {self.position}")
+        return str(f"{self.message}: Caught at character {self.position}")

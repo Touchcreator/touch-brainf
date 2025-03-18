@@ -5,13 +5,11 @@ class Runner:
     def __init__(self, code: str):
         self.code = code
 
-
-
     def interpret(self, code: str): # interpret the program
         mem = [0]
         memPos = 0
 
-        i = 0
+        i = 0 # everything below is just brainf code stuff
         while i < len(code):
             if code[i] == ">":
                 memPos += 1
@@ -20,7 +18,7 @@ class Runner:
             if code[i] == "<":
                 memPos -= 1
                 if memPos < 0:
-                    raise PointerNotInRangeError("Attempted to go to a negative memory position", memPos)
+                    raise PointerNotInRangeError("Attempted to go to a negative memory position", i)
             if code[i] == "+":
                 mem[memPos] += 1
                 if mem[memPos] >= 256:
@@ -64,11 +62,6 @@ class Runner:
                 
             i+=1 # iterate (or something)
 
-    def run(self):
+
+    def run(self): # just a run function which is a wrapper for interpret
         self.interpret(self.code)
-
-
-            
-
-
-    
