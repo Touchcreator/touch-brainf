@@ -22,7 +22,7 @@
 		"body": [
 			"class ${1:ClassName}:",
 			"\tdef __init__(self, ${2:params}):",
-			"\t\t${3:insertConstructor}"
+			"\t\tpass #replace this with your code"
 		],
 		"description": "Python Class"
 	}

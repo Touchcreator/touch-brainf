@@ -1,3 +1,7 @@
 import touch_brainf
 
-thing = touch_brainf.Thing()
+code = "++++++++++.++[]."
+
+runner = touch_brainf.Runner(code)
+
+runner.run()
