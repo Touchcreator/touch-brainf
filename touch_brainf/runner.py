@@ -35,9 +35,32 @@ class Runner:
                 ascii_to_numb = str(input("Input Requested (Only the first character will be accepted): "))
                 mem[memPos] = ord(ascii_to_numb[0])
             if code[i] == "[":
-                print("[ detected")
+                if mem[memPos] == 0:
+                    opening_count = 0
+                    i+=1
+
+                    while i < len(code):
+                        if code[i] == "]" and opening_count == 0:
+                            break
+                        elif code[i] == "[":
+                            opening_count+=1
+                        elif code[i] == "]":
+                            opening_count-=1
+                        i+=1
+
             if code[i] == "]":
-                print("] detected")
+                if mem[memPos] != 0:
+                    closing_count = 0
+                    i-=1
+
+                    while i >= 0:
+                        if code[i] == "[" and closing_count == 0:
+                            break
+                        elif code[i] == "]":
+                            closing_count+=1
+                        elif code[i] == "[":
+                            closing_count-=1
+                        i-=1
                 
             i+=1 # iterate (or something)
 
