@@ -1,1 +1,1 @@
-print("WIP")
+from touch_brainf.thing import Thing
