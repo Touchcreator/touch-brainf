@@ -13,7 +13,7 @@
       ```
 - ### From PyPI:
   - #### With PIP:
-    -  Run `pip install touch-brainf` in your terminal (although the package isn't on PyPI yet)
+    -  Run `pip install touch-brainf` in your terminal
       
 ## Using the Interpreter
 - ### From the terminal:
