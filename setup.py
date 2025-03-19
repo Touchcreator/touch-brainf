@@ -12,7 +12,7 @@ classifiers = [
  
 setup(
     name='touch_brainf',
-    version='25.3.19',
+    version='25.3.19.1',
     description='BrainF interpreter Python package',
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
     url='https://github.com/Touchcreator/touch-brainf',  
