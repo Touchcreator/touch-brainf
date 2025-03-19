@@ -27,6 +27,5 @@ setup(
             'touch-brainf = touch_brainf.__main__:main'
         ]
     },
-    include_package_data=True,
     long_description_content_type='text/markdown'
 )
