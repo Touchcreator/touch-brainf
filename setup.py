@@ -1,36 +1,31 @@
-# THIS IS FROM GOONLANG FOR THE TIMRE BEING
+# based on the goonlang setup.py
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages # type: ignore
  
 classifiers = [
-    'Development Status :: 3 - Alpha',
-    'Intended Audience :: Developers',
-    'Operating System :: OS Independent',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3',
-    'Natural Language :: English'
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation',
+    'Programming Language :: Python :: Implementation :: CPython'
 ]
  
 setup(
-    name='goonlang',
-    version='25.2.23',
-    description='A super simple programming language made with the lark package.',
+    name='touch_brainf',
+    version='25.3.19',
+    description='BrainF interpreter Python package',
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
-    url='https://github.com/Touchcreator/goonlang',  
+    url='https://github.com/Touchcreator/touch-brainf',  
     author='Touchcreator (Tochukwu Okolo)',
     author_email='tochukwu.m.okolo@gmail.com',
     license='MIT', 
     classifiers=classifiers,
-    keywords=['lark','language','programming','python','goonlang'], 
+    keywords=['brainf', 'branflakes', 'brainfuck', 'python', 'touchcreator'], 
     packages=find_packages(),
-    install_requires=['lark'],
     entry_points = {
         'console_scripts': [
-            'goonlang = goonlang.__main__:main'
+            'touch-brainf = touch_brainf.__main__:main'
         ]
-    },
-    package_data = {
-        'goonlang': ['grammar/*.lark']
     },
     include_package_data=True,
     long_description_content_type='text/markdown'

@@ -1,2 +1,9 @@
+# generated python files
 */__pycache__
 __pycache__
+*.py[cod]
+
+# generated dist files
+build/
+dist/
+*.egg-info/
