@@ -65,3 +65,9 @@ class Runner:
 
     def run(self): # just a run function which is a wrapper for interpret
         self.interpret(self.code)
+
+
+            
+
+
+    
