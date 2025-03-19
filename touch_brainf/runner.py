@@ -1,6 +1,6 @@
 from touch_brainf.errors import *
 
-class Runner:
+class Runner: # this class is really the interpreter, i didnt call it "Interpreter" so that stuff made more sense
 
     def __init__(self, code: str):
         self.code = code

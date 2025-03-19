@@ -1,4 +1,15 @@
+# GO
+# TO
+# THE
+# TOUCH_BRAINF
+# FOLDER
+# FOR
+# THE
+# CODE!!!!
+
 import touch_brainf
+
+# this is an example for the package, might remove this file
 
 code = """>+++++++++[<++++++++>-]<.>++++++[<+++++>-]<-.+++++++..+++.>>
 +++++++[<++++++>-]<++.------------.<++++++++.--------.+++.------.--------.
