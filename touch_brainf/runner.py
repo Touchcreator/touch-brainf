@@ -67,8 +67,4 @@ class Runner:
     def run(self):
         self.interpret(self.code)
 
-
-            
-
-
     
