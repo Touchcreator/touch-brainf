@@ -27,10 +27,20 @@
     runner = bf.Runner("+++.")
     runner.run()
     ```
+  - If you want to import from a file, you can also do...
+    - ```py
+      import touch_brainf as bf
+
+      runner = bf.Runner(bf.get_code_from_file("file.bf"))
+      runner.run()
+      ```
   - I don't know why someone would do this, but it's their choice
  
 ## Uninstallation
 Just run `pip uninstall touch-brainf`!
+
+## Examples
+Look at the `examples` folder for any help!
 
 -----
 
