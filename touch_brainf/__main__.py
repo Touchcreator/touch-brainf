@@ -1,6 +1,7 @@
 import sys
 import os
 import random
+import argparse
 
 import touch_brainf
 
@@ -11,10 +12,15 @@ import touch_brainf
 
 def main():
 
-    try: # set the file name to the argument provided
-        filename = str(sys.argv[1])
-    except IndexError:
-        touch_brainf.file_error() # if theres no file, throw the file error
+    version_path = os.path.join(touch_brainf.__path__[0], "data/version.txt")
+
+    # playing with command parsing
+    parser = argparse.ArgumentParser(prog="touch_brainf")
+    parser.add_argument("filename", help="The file that you want to run", nargs=1)
+    parser.add_argument("-v", "--version", action="version", version=open(version_path).read())
+    args = parser.parse_args()
+
+    filename = args.filename
 
     code = touch_brainf.get_code_from_file(filename)
 

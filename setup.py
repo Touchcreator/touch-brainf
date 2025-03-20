@@ -12,7 +12,7 @@ classifiers = [
  
 setup(
     name='touch_brainf',
-    version='25.3.19.1',
+    version=open('touch_brainf/data/version.txt').read().strip(),
     description='BrainF interpreter Python package',
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
     url='https://github.com/Touchcreator/touch-brainf',  
@@ -27,5 +27,8 @@ setup(
             'touch-brainf = touch_brainf.__main__:main'
         ]
     },
-    long_description_content_type='text/markdown'
+    long_description_content_type='text/markdown',
+    package_data = {
+        'touch_brainf': ['data/*']
+    }
 )
