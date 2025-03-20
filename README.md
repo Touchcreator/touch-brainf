@@ -19,6 +19,7 @@
 - ### From the terminal:
   - Run `touch-brainf <filename>` in your terminal
   - If that doesn't work, use `python -m touch_brainf <filename>`
+  - You can also do `touch-brainf -h` or `python -m touch_brainf -h` for help
 - ### In a Python File:
   - The `main.py` file is an example of a way to use the package in a Python file. The example below is a very simple example.
   - ```py
